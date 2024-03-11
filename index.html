@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Assigment 7</title>
+</head>
+<body>
+    <script>
+    //    Task 1
+        var city = prompt ("Enter City Name");
+         var cityName = 'Karachi';
+         if (city === cityName){ 
+           document.write('Welcome to city of light ');
+         }
+        //  Task 2
+        var userGender = prompt ('Enter Your Gender')
+        var Gender1 = 'Male'
+        var Gender2 = 'Female'
+        if (userGender === Gender1){
+            document.write('Hello Sir How are you ')
+        }
+        if (userGender === Gender2){
+            document.write('Hello maam How are you ')
+        }
+        // Task 3
+        var user = prompt ('Tell me the Traffic Signal colour ')
+        var colour1 = 'Red'
+        var colour2 = 'Green'
+        var colour3 = 'Yellow'
+        if(user === colour1){
+         document.write('Red Light indicate you Stop ')
+        }
+        if(user === colour2){
+            document.write('Green light indicate You Go ')
+        }
+        if(user === colour3){
+            document.write('Yellow Light indicate you Start Your Vehicle Engine ')
+        }
+        // Task 4
+        var a = prompt ('Check the fuel.Enter Vale Bellow ')
+        if(a <= 0.25){
+            document.write(' Please refill the fuel in your car ')
+        }
+        else{
+            document.write(' Fuel is full ')
+        }
+        // Task 5
+        // a
+         var a = 4;
+        if (++a === 5){    // True
+        alert("given condition for variable a is true");
+         }
+        //  b
+         var b = 82;
+         if (b++ === 83){     //False
+         alert("given condition for variable b is true");
+         }
+         //c
+         var c = 12;
+         if (c++ === 13){    //false
+         alert("condition 1 is true");
+         }
+         if (c === 13){      //True
+         alert("condition 2 is true");
+         }
+         if (++c < 14){     //false
+         alert("condition 3 is true");
+         }
+         if(c === 14){      //True
+         alert("condition 4 is true");
+         }
+         //d
+         var materialCost = 20000;
+         var laborCost = 2000;                 //True
+         var totalCost = materialCost + laborCost;
+         if (totalCost === laborCost + materialCost){
+         alert("The cost equals");
+         }
+         ///e
+         if (true){        //True
+         alert("True");
+         }
+         if (false){       //False
+         alert("False");
+         }
+         //f
+         if("car" < "cat"){           
+         alert("car is smaller than cat");//This is false words not compare but this right show because this compare both last words r & t. 
+         }
+        // Task 6
+        var userPercentage = prompt('Enter Your Marks')
+        if(userPercentage > 80){
+            document.write(' A-one Grade')
+            document.write(' Remarks Exellence')
+        }
+        else if(userPercentage > 70 && userPercentage < 80){
+        document.write(' A Grade')
+        document.write(' Good')
+        }
+        else if(userPercentage > 60 && userPercentage < 70){
+        document.write(' B Grade')
+        document.write(' You need to improve')
+        }
+        else if (userPercentage < 60){
+        document.write(' Fail')
+        document.write(' Sorry')
+        }
+        // Task 9
+        var Check = prompt('Enter Number & check the even & odd')
+        if(Check%2 ==0){
+        document.write(' This number is even')
+        }
+        else{
+            document.write(' This Number is odd')
+        }
+        // Task 10
+        var temPerature = prompt(' Enter a Number & check Weather')
+        if(temPerature > 40){
+        document.write(' Its too hot outside')
+        }
+        else if(temPerature > 30 && temPerature < 40 ){
+        document.write(' The weather Today is Normal')
+        }
+        else if(temPerature > 20 && temPerature < 30 ){
+        document.write(' Today Weather is Cool')
+        }
+        else if(temPerature > 10 && temPerature < 20){
+        document.write(' OMG Today Weather is So Cool')
+        }
+        // Task 11
+        var calculator = +prompt('Enter First Number')
+        var calculator2 = +prompt('Enter Second Number')
+        document.write(calculator+calculator2)
+    </script>
+</body>
+</html>
